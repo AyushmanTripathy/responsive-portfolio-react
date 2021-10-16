@@ -52,6 +52,7 @@ export const Wrapper = styled.div`
       cursor: pointer;
       font-size: 1rem;
       font-weight: 400;
+      border-bottom: 2px solid transparent;
 
       &:hover {
         color: var(--light_blue);
