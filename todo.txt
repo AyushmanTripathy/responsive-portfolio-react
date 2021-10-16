@@ -1,6 +1,11 @@
 DONE
 ----
 
+added mail link
+
+home section in mobile view
+  - padding left -> 10vw
+
 functional navlink
   - added ids to Wrappers 
   - window.location.href = id
@@ -12,8 +17,16 @@ skill set section card over flowing
   - changed from flex to grid
   - added media querys(3)
 
+add media query in project section(3)
+hover glitch for button under resume button
+
 TODO
 ----
 
-contact section glitch
-hover glitch for button under resume button
+hamburger icon position
+close the hamburger menu after navlink click
+
+EXTRAS
+------
+
+make a component for project card

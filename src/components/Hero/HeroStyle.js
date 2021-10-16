@@ -3,7 +3,7 @@ import styled from "styled-components";
 import Back from "../stuff/back_try2.svg";
 
 export const HeroWrapper = styled.section`
-  height: 100vh;
+  height: fit-content;
   width: 100vw;
   background-image: url(${Back});
   background-repeat: no-repeat;
@@ -13,7 +13,7 @@ export const HeroWrapper = styled.section`
     display: flex;
     flex-direction: column;
     height: 100%;
-    padding: 60px 220px; // top-bottom left-rigth
+    padding: 60px 10vw; // top-bottom left-rigth
     justify-content: center;
     color: var(--white);
 
@@ -54,15 +54,16 @@ export const HeroWrapper = styled.section`
     }
 
     .social_icon {
-      padding-top: 3.7rem;
       font-size: 1.5rem;
+
       .icon {
         color: var(--dark_blue);
-        margin-right: 2rem;
+        margin-top:25px;
+        margin-right:10px;
+        margin-left:10px;
 
         &:hover {
           color: var(--white);
-          font-size: 1.7rem;
           transition: 0.2s ease;
         }
       }

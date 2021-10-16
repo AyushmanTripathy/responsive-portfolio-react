@@ -1,5 +1,4 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
 
 import { Wrapper } from "./NavbarStyle";
 
@@ -12,9 +11,7 @@ const Navbar = () => {
     <>
       <Wrapper className="projects">
         <div className="logo">
-          <NavLink to="/">
             <span className="header">Suprada</span>
-          </NavLink>
         </div>
 
         <input type="checkbox" className="menu-btn" id="menu-btn" />

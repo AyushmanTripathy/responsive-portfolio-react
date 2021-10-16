@@ -36,7 +36,7 @@ const Hero = () => {
                 <FaLinkedinIn className="icon" />
               </a>
 
-              <a href="supradatripathy789@gmail.com" target="_blank">
+              <a href="https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mail&to=supradatripathy789@gmail.com" target="_blank">
                 <FaEnvelope className="icon" />
               </a>
             </div>

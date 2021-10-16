@@ -108,7 +108,7 @@ const Project = () => {
         </div>
         <div className="links">
           <a
-            href="https://github.com/Suprada-2002"
+            href="https://github.com/Suprada-2002?tab=repositories"
             target="_blank"
             className="other-project"
           >
