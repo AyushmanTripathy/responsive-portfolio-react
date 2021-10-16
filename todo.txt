@@ -1,6 +1,8 @@
-DONE
-----
+        ------
+       | DONE |
+        ------
 
+hamburger icon position (right of navbar)
 added mail link
 
 home section in mobile view
@@ -19,14 +21,19 @@ skill set section card over flowing
 
 add media query in project section(3)
 hover glitch for button under resume button
+invalid property error
 
-TODO
-----
+         ------
+        | TODO |
+         ------
 
-hamburger icon position
+scrolling animation
 close the hamburger menu after navlink click
 
-EXTRAS
-------
+         --------
+        | EXTRAS |
+         --------
 
+horizontal scroll for 
+decrease transition time for hamburger
 make a component for project card

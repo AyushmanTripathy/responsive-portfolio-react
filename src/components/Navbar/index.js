@@ -3,7 +3,9 @@ import React from "react";
 import { Wrapper } from "./NavbarStyle";
 
 function focus({ target }) {
-  window.location.href = target.id;
+  // scrolled to element
+  document.querySelector(target.id).scrollIntoView();
+  //now scroll back 90px
 }
 
 const Navbar = () => {
@@ -11,11 +13,11 @@ const Navbar = () => {
     <>
       <Wrapper className="projects">
         <div className="logo">
-            <span className="header">Suprada</span>
+          <span className="header">Suprada</span>
         </div>
 
         <input type="checkbox" className="menu-btn" id="menu-btn" />
-        <label for="menu-btn" className="menu-icon">
+        <label htmlFor="menu-btn" className="menu-icon">
           <span className="menu-icon__line"></span>
         </label>
 

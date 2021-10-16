@@ -63,7 +63,10 @@ export const Wrapper = styled.div`
   }
 
   .menu-icon {
-    position: relative;
+    position: absolute;
+    right: 10vw;
+    top: 5;
+
     padding: 26px 10px;
     cursor: pointer;
     z-index: 1;
