@@ -8,7 +8,7 @@ import Crude from "../stuff/CA.JPG";
 const Project = () => {
   return (
     <>
-      <Wrapper className="projects">
+      <Wrapper id="project" className="projects">
         <h2 className="title">
           <span>Projects</span>
         </h2>

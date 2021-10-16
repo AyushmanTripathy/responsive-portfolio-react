@@ -1,0 +1,19 @@
+DONE
+----
+
+functional navlink
+  - added ids to Wrappers 
+  - window.location.href = id
+
+navlink hover glitch
+  - added transparent border before hover
+
+skill set section card over flowing
+  - changed from flex to grid
+  - added media querys(3)
+
+TODO
+----
+
+contact section glitch
+hover glitch for button under resume button

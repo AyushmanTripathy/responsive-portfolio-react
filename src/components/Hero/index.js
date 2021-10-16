@@ -15,7 +15,7 @@ import { FiFigma } from "react-icons/fi";
 const Hero = () => {
   return (
     <>
-      <HeroWrapper className="home">
+      <HeroWrapper id="home" className="home">
         <div className="container">
           <div className="text">
             <h2 className="upper_text">Hello, I'm</h2>

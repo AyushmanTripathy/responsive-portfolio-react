@@ -3,6 +3,10 @@ import { Link, NavLink } from "react-router-dom";
 
 import { Wrapper } from "./NavbarStyle";
 
+function focus({ target }) {
+  window.location.href = target.id;
+}
+
 const Navbar = () => {
   return (
     <>
@@ -19,21 +23,21 @@ const Navbar = () => {
         </label>
 
         <ul className="nav-links">
-          <NavLink to="/home" activeClassName="home" exact>
-            <li className="nav-link">Home</li>
-          </NavLink>
-          <NavLink to="/about" activeClassName="about">
-            <li className="nav-link">About</li>
-          </NavLink>
-          <NavLink to="/skill" activeClassName="home" exact>
-            <li className="nav-link">Skills</li>
-          </NavLink>
-          <NavLink to="/projects">
-            <li className="nav-link">Projects</li>
-          </NavLink>
-          <NavLink to="/contact">
-            <li className="nav-link">Contact</li>
-          </NavLink>
+          <div onClick={focus} id="#home" tar="home" className="nav-link">
+            Home
+          </div>
+          <li onClick={focus} id="#about-me" className="nav-link">
+            About
+          </li>
+          <li onClick={focus} id="#skill" className="nav-link">
+            Skills
+          </li>
+          <li onClick={focus} id="#project" className="nav-link">
+            Projects
+          </li>
+          <li onClick={focus} id="#contact" className="nav-link">
+            Contact
+          </li>
         </ul>
       </Wrapper>
     </>
