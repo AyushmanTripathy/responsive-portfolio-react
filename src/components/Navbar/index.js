@@ -3,9 +3,7 @@ import React from "react";
 import { Wrapper } from "./NavbarStyle";
 
 function focus({ target }) {
-  // scrolled to element
   document.querySelector(target.id).scrollIntoView();
-  //now scroll back 90px
 }
 
 const Navbar = () => {
