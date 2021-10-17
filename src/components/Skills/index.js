@@ -7,7 +7,7 @@ import { IoLogoJavascript } from "react-icons/io";
 const Skills = () => {
   return (
     <>
-      <Wrapper className="skill">
+      <Wrapper id="skill" className="skill">
         <h2>
           <span>SkillSet</span>
         </h2>

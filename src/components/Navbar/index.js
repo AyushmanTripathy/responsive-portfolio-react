@@ -1,39 +1,42 @@
 import React from "react";
-import { Link, NavLink } from "react-router-dom";
 
 import { Wrapper } from "./NavbarStyle";
+
+function focus({ target }) {
+  // scrolled to element
+  document.querySelector(target.id).scrollIntoView();
+  //now scroll back 90px
+}
 
 const Navbar = () => {
   return (
     <>
       <Wrapper className="projects">
         <div className="logo">
-          <NavLink to="/">
-            <span className="header">Suprada</span>
-          </NavLink>
+          <span className="header">Suprada</span>
         </div>
 
         <input type="checkbox" className="menu-btn" id="menu-btn" />
-        <label for="menu-btn" className="menu-icon">
+        <label htmlFor="menu-btn" className="menu-icon">
           <span className="menu-icon__line"></span>
         </label>
 
         <ul className="nav-links">
-          <NavLink to="/home" activeClassName="home" exact>
-            <li className="nav-link">Home</li>
-          </NavLink>
-          <NavLink to="/about" activeClassName="about">
-            <li className="nav-link">About</li>
-          </NavLink>
-          <NavLink to="/skill" activeClassName="home" exact>
-            <li className="nav-link">Skills</li>
-          </NavLink>
-          <NavLink to="/projects">
-            <li className="nav-link">Projects</li>
-          </NavLink>
-          <NavLink to="/contact">
-            <li className="nav-link">Contact</li>
-          </NavLink>
+          <div onClick={focus} id="#home" tar="home" className="nav-link">
+            Home
+          </div>
+          <li onClick={focus} id="#about-me" className="nav-link">
+            About
+          </li>
+          <li onClick={focus} id="#skill" className="nav-link">
+            Skills
+          </li>
+          <li onClick={focus} id="#project" className="nav-link">
+            Projects
+          </li>
+          <li onClick={focus} id="#contact" className="nav-link">
+            Contact
+          </li>
         </ul>
       </Wrapper>
     </>

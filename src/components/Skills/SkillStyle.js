@@ -3,16 +3,17 @@ import styled from "styled-components";
 import Back from "../stuff/skill_back2.svg";
 
 export const Wrapper = styled.section`
-  height: 50vh;
+  height: fit-content;
   width: 100vw;
   display: flex;
   flex-direction: column;
   text-align: center;
   background-image: url(${Back});
+  padding-top:10px;
+  padding-bottom:80px;
 
   h2 {
     text-align: center;
-    padding: 2rem 1rem;
     font-weight: 800;
     font-size: 1.6rem;
     span {
@@ -22,25 +23,28 @@ export const Wrapper = styled.section`
   }
 
   .skill-container {
-    display: flex;
-    justify-content: center;
-    gap: 40px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    padding:5%;
+    gap:5%;
+  }
 
-    .skill-card {
+  .skill-card {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
       color: var(--light_blue);
       text-align: center;
+
       background: linear-gradient(
         to right,
         var(--light_black),
         var(--dark_black)
       );
+      
       border-radius: 10px;
-      width: 200px;
-      height: 200px;
+      padding:5%;
 
       .icon {
         font-size: 4.2rem;
@@ -50,13 +54,18 @@ export const Wrapper = styled.section`
         font-size: 1.4rem;
       }
     }
+
+  @media screen and (min-width: 480px) and (max-width: 1080px) {
+    .skill-container {
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
   }
 
-  @media screen and (max-width: 1000px) {
-    height: 70vh;
+  @media screen and (max-width: 480px) {
     .skill-container {
-      display: flex;
-      flex-wrap: wrap;
+      grid-template-rows: 1fr;
+      grid-template-columns: auto;
     }
   }
 `;

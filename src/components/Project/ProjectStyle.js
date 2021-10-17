@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 import Back from "../stuff/project_back.svg";
 export const Wrapper = styled.section`
-  height: 100vh;
+  height: fit-content;
   width: 100vw;
   background-image: url(${Back});
 
@@ -20,16 +20,17 @@ export const Wrapper = styled.section`
 
   .cards {
     color: black;
-    display: flex;
-    flex-direction: row;
+
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+    grid-template-rows:auto;
+
     gap: 10px;
     padding: 3rem 10rem;
     justify-content: space-around;
 
     .card {
       flex-direction: column;
-      width: 350px;
-      height: 400px;
       border-radius: 10px;
       // box-shadow: 5px 5px 20px var(--white);
       background: linear-gradient(
@@ -83,20 +84,17 @@ export const Wrapper = styled.section`
     }
   }
 
-  @media screen and (max-width: 1050px) {
-    padding-top: 0.2rem;
-    height: 230vh;
-
-    .title {
-      align-items: center;
-    }
-
+  @media screen and (min-width: 670px) and (max-width: 1300px) {
     .cards {
-      display: grid;
-      align-items: center;
+      grid-template-rows: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+    }
+  }
 
-      gap: 1rem;
-      width: 100%;
+  @media screen and (max-width: 670px) {
+    .cards {
+      grid-template-rows: 1fr;
+      grid-template-columns: auto;
     }
   }
 `;

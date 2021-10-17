@@ -1,0 +1,39 @@
+        ------
+       | DONE |
+        ------
+
+hamburger icon position (right of navbar)
+added mail link
+
+home section in mobile view
+  - padding left -> 10vw
+
+functional navlink
+  - added ids to Wrappers 
+  - window.location.href = id
+
+navlink hover glitch
+  - added transparent border before hover
+
+skill set section card over flowing
+  - changed from flex to grid
+  - added media querys(3)
+
+add media query in project section(3)
+hover glitch for button under resume button
+invalid property error
+
+         ------
+        | TODO |
+         ------
+
+scrolling animation
+close the hamburger menu after navlink click
+
+         --------
+        | EXTRAS |
+         --------
+
+horizontal scroll for 
+decrease transition time for hamburger
+make a component for project card

@@ -12,7 +12,7 @@ import {
 const Contact = () => {
   return (
     <>
-      <Wrapper className="contact">
+      <Wrapper id="contact" className="contact">
         <h1>
           <span>Contact</span>
         </h1>

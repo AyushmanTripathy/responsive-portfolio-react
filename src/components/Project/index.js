@@ -8,7 +8,7 @@ import Crude from "../stuff/CA.JPG";
 const Project = () => {
   return (
     <>
-      <Wrapper className="projects">
+      <Wrapper id="project" className="projects">
         <h2 className="title">
           <span>Projects</span>
         </h2>
@@ -108,7 +108,7 @@ const Project = () => {
         </div>
         <div className="links">
           <a
-            href="https://github.com/Suprada-2002"
+            href="https://github.com/Suprada-2002?tab=repositories"
             target="_blank"
             className="other-project"
           >
