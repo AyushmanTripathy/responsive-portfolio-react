@@ -20,9 +20,9 @@ const Navbar = () => {
         </label>
 
         <ul className="nav-links">
-          <div onClick={focus} id="#home" tar="home" className="nav-link">
+          <li onClick={focus} id="#home" tar="home" className="nav-link">
             Home
-          </div>
+          </li>
           <li onClick={focus} id="#about-me" className="nav-link">
             About
           </li>
